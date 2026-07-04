@@ -1,6 +1,13 @@
-# TokenHub AI Landing Page
+# TokenHub AI - Next.js Landing Page
 
-Landing page tĩnh cho website bán gói token LLM dành cho các model GPT, Claude, Gemini và Grok.
+Landing page Next.js cho website bán gói token LLM dành cho các model GPT, Claude, Gemini và Grok.
+
+## Công nghệ
+
+- Next.js App Router
+- React
+- TypeScript
+- CSS thuần trong `app/globals.css`
 
 ## Tính năng
 
@@ -10,24 +17,47 @@ Landing page tĩnh cho website bán gói token LLM dành cho các model GPT, Cla
 - Tính năng quản lý token, usage real-time và hạn mức team
 - FAQ và disclaimer pháp lý cơ bản
 - Responsive cho desktop, tablet và mobile
-- JavaScript nhẹ cho menu mobile và hiệu ứng pricing card
 
 ## Cấu trúc project
 
 ```text
 .
-├── index.html
-├── styles.css
-├── script.js
+├── app
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── next-env.d.ts
+├── next.config.mjs
+├── package.json
+├── tsconfig.json
 └── README.md
 ```
 
 ## Chạy local
 
-Mở trực tiếp file `index.html` trong trình duyệt, hoặc dùng một static server:
+Cài dependencies:
 
 ```bash
-npx serve .
+npm install
+```
+
+Chạy development server:
+
+```bash
+npm run dev
+```
+
+Mở trình duyệt tại:
+
+```text
+http://localhost:3000
+```
+
+Build production:
+
+```bash
+npm run build
+npm run start
 ```
 
 ## Ghi chú triển khai thật
