@@ -1,0 +1,18 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+
+const inter = Inter({ subsets: ["latin", "vietnamese"] });
+
+export const metadata: Metadata = {
+  title: "TokenHub AI - Mua token GPT, Claude, Gemini, Grok",
+  description: "Landing page marketplace bán gói token cho các model LLM như GPT, Claude, Gemini và Grok."
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="vi">
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
+}
